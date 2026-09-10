@@ -42,10 +42,12 @@ Vykreslování záznamů z vyjmenovaných modulů respektuje [Datový model AMČ
 
 Základní postup užívání AMČR Viewer je následující:
 
-1. Ke spuštění pluginu slouží trojice tlačítek `Stáhnout data akcí` ![](figs/qv-icon-akce.png){width="2.4%"}, `Stáhnout data samostatných nálezů` ![](figs/qv-icon-sn.png){width="2.4%"} a `Stáhnout data lokalit` ![](figs/qv-icon-lokality.png){width="2.4%"}, která se po instalaci automaticky zobrazí v jedné z horních nástrojových lišt QGIS v podobě rozevíratelné nabídky. Pokud se tak nestane, je možné plugin spustit z hlavního menu: `Plugins` → `AMČR Viewer` → `AMČR Viewer`.
+1. Ke spuštění pluginu slouží trojice tlačítek `Stáhnout data akcí` ![](figs/qv-icon-akce.png){width="2.4%"}, `Stáhnout data samostatných nálezů` ![](figs/qv-icon-sn.png){width="2.4%"} a `Stáhnout data lokalit` ![](figs/qv-icon-lokality.png){width="2.4%"}, která se po instalaci automaticky zobrazí v jedné z horních nástrojových lišt QGIS v podobě rozevíratelné nabídky. 
+Pokud se tak nestane, je možné plugin spustit z hlavního menu: `Plugins` → `AMČR Viewer` → `AMČR Viewer`.
 Nabídka dále obsahuje položku `Přihlásit se` (viz [Přihlášení](#přihlášení)) a položku `Nápověda AMČR Help`, která otevře tuto stránku.
 
-2. Otevřené okno `Filtr AMČR` slouží k filtrování dat před jejich stažením. Je možné filtrovat pomocí polí vypsaných níže:
+2. Otevřené okno `Filtr AMČR` slouží k filtrování dat před jejich stažením. 
+Je možné filtrovat pomocí polí vypsaných níže:
 
 | Filtr | Akce | Lokality | Sam. nálezy |
 |---|---|---|---|
@@ -156,18 +158,25 @@ kable(sn)
 
 ### Procházení a filtrování dat
 
-Zobrazená data je možné procházet několika způsoby. Nejjednodušším nástrojem typu "pokus-omyl" je nástroj *Identifikovat prvky*. Po kliknutí na prvek se zobrazí jak informace o příslušné *dokumentační jednotce* (*akci*/*lokalitě*) či *samostatném nálezu*, tak i ty z připojených *komponent*, pokud jsou na *dokumentační jednotku* tyto navázány.
+Zobrazená data je možné procházet několika způsoby. 
+Nejjednodušším nástrojem typu "pokus-omyl" je nástroj *Identifikovat prvky*. 
+Po kliknutí na prvek se zobrazí jak informace o příslušné *dokumentační jednotce* (*akci*/*lokalitě*) či *samostatném nálezu*, tak i ty z připojených *komponent*, pokud jsou na *dokumentační jednotku* tyto navázány.
 
 [![Procházení výsledků pomocí nástroje *Identifikovat prvky*, včetně připojených *komponent*.](figs/qv-identify-features.gif){width="66%" fig-align="center"}](figs/qv-identify-features.gif)
 
-O něco systematičtějším způsobem je pak možnost *Filtr*, která umožňuje filtrovat výsledky jak pomocí atributů *akce*/*lokality*/*samostatného nálezu*, tak pomocí atributů připojených komponent. Postup filtrování je zobrazen na animaci níže.
+O něco systematičtějším způsobem je pak možnost *Filtr*, která umožňuje filtrovat výsledky jak pomocí atributů *akce*/*lokality*/*samostatného nálezu*, tak pomocí atributů připojených komponent. 
+Postup filtrování je zobrazen na animaci níže.
 
 [![Filtrování výsledků pomocí nástroje *Filtr*, včetně připojených *komponent*.](figs/qv-filtering.webp){width="66%" fig-align="center"}](figs/qv-filtering.webp)
 
 ### Omezení
 
-- Limit načítaných záznamů je omezen na **20 000**. Doporučujeme využít filtrů pro předtřídění dat. V opačném případě načítejte data postupně po územních celcích (krajích či v některých případech okresech). Počty akcí podle krajů lze zkontrolovat v [Digiarchivu](https://digiarchiv.aiscr.cz/map?entity=akce&sort=datestamp%20desc&mapa=true&page=0){.external}.
-- Při načítání komponent jsou prostorové prvky duplikovány -- každý prvek odpovídá jedné komponentě. Prostorové analýzy (plochy, počty) mohou být zkreslené.
+- Limit načítaných záznamů je omezen na **20 000**. 
+Doporučujeme využít filtrů pro předtřídění dat. 
+V opačném případě načítejte data postupně po územních celcích (krajích či v některých případech okresech). 
+Počty akcí podle krajů lze zkontrolovat v [Digiarchivu](https://digiarchiv.aiscr.cz/map?entity=akce&sort=datestamp%20desc&mapa=true&page=0){.external}.
+- Při načítání komponent jsou prostorové prvky duplikovány -- každý prvek odpovídá jedné komponentě. 
+Prostorové analýzy (plochy, počty) mohou být zkreslené.
 
 
 ## Zapojte se
